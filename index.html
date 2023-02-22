@@ -15,64 +15,109 @@
     <title>Spotify Web</title>
 </head>
 <body>
-    <!-- WRAPPER -->
-    <div class="wrapper relative">
-        <!-- MAIN -->
-        <section class="main">
-
-            <!-- Top Container -->
-            <div class="top-container flex jc-end ai-center">
-                <a class="top-button white" href="">EFFETTUA L'UPGRADE</a>
-            </div>
-
-            <!-- Middle Container -->
-            <div class="middle-container">
-              
-            </div>
-        </section>
-        <!-- /MAIN -->
-
-        <!-- SIDEBAR -->
-        <section class="sidebar p-20 white line-h-20">
-            <div class="logo-container mb-20">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <nav class="nav-container flex column between">
-                <div class="buttons">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Home</a></li>
-                    </ul>
-
-                    <h4>PLAYLIST</h4>
-                    <ul>
-                        <li><a href="">Crea Plalist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                    </ul>
+    <div class="web-app">
+        <!-- WRAPPER -->
+        <div class="wrapper flex">
+            <!-- SIDEBAR -->
+            <section class="sidebar p-20 white line-h-20">
+                <div class="logo-container mb-20 button-names">
+                    <img src="img/logo.svg" alt="">
                 </div>
-                <div class="user">
-                    <div>Installa app</div>
-                    <div>John Doe</div>
+                <div class="logo-b">
+                    <img src="img/logo-small.svg" alt="">
                 </div>
-
-            </nav>
-            
-        </section>
-        <!-- /SIDEBAR -->
-
+                <nav class="nav-container flex column between">
+                    <div class="buttons">
+                        <ul class="button-names">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Home</a></li>
+                        </ul>
+     
+                        <h4 class="button-names">PLAYLIST</h4>
+                        <ul class="button-names">
+                            <li><a href="">Crea Plalist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                         </ul>
+                    </div>
+                    <div class="user">
+                        <div class="button-names">Installa app</div>
+                        <div class="button-names">John Doe</div>
+                    </div>
+     
+                </nav>
+                 
+            </section>
+            <!-- /SIDEBAR -->
+    
+            <!-- MAIN -->
+            <section class="main">
+     
+                <!-- Top Container -->
+                <div class="top-container flex jc-end ai-center">
+                    <a class="top-button white" href="">EFFETTUA L'UPGRADE</a>
+                </div>
+    
+                <!-- Middle Container -->
+                <div class="middle-container">
+                  
+                </div>
+            </section>
+            <!-- /MAIN --> 
+        </div>
+        <!-- /WRAPPER -->
         <!-- PLAYER -->
-        <section class="player">
+        <section class="player flex white">
+            <!-- left -->
+            <div class="player-left p-20 flex gap-20">
+                <div class="track-logo">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="track-details mr-20">
+                    <h5>Sinister</h5>
+                    <h6 class="grey">Brano Nome</h6>
+                </div>
+                <div class="track-reactions mt-20 ml-20">
+                    <a class="mr-20" href=""><i class="fa-regular fa-heart"></i></a>
+                    <a href=""><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+
+            <!-- center -->
+            <div class="player-center p-10 ta-center">
+                <div class="player-buttons flex jc-center mb-20">
+                    <ul class="flex gap-20">
+                        <li><a href=""></a>A</li>
+                        <li><a href=""></a>A</li>
+                        <li><a href=""></a>A</li>
+                        <li><a href=""></a>A</li>
+                        <li><a href=""></a>A</li>
+                    </ul>
+                </div>
+                <a class="time-left">0:25</a>
+                <a class="track-bar"></a>
+                <a class="time-right">4:35</a>
+            </div>
+
+            <!-- right -->
+            <div class="player-right p-20">
+                <div class="player-settings flex jc-end ai-center">
+                    <ul class="flex gap-20 p-20">
+                        <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-desktop"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-volume-xmark"></i></a></li>
+                    </ul>
+                <div class="volume-bar"></div>
+                </div>
+            </div>
         </section>
         <!-- /PLAYER -->
-
-    </div>
-    <!-- /WRAPPER -->
+     </div>
 </body>
 </html>

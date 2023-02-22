@@ -5,7 +5,7 @@
     --bg-secondary: #282828;
     --bg-top: #080b12;
     --bg-hover: #adff2f;
-    --bg-footer: #282828;
+    --bg-player: #282828;
 }
 
 /* RESET */
@@ -42,6 +42,10 @@ body {
     color: #656565;
 }
 
+.ta-center {
+    text-align: center;
+}
+
 /* Utilities */
 /* flex */
 .flex {
@@ -51,6 +55,7 @@ body {
 .column {
     flex-direction: column;
 }
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -80,13 +85,17 @@ body {
     position: absolute;
 }
 
-/* .inline {
-    display: inline-block;
-} */
+.block {
+    display: block;
+}
 
 /* spacing */
 .line-h-20 {
     line-height: 30px;
+}
+
+.p-10 {
+    padding: 10px;
 }
 
 .p-20 {
@@ -105,10 +114,26 @@ body {
     margin-bottom: 20px;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px
+}
+
 /* WRAPPER */
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     /* background-color: var(--bg-primary); */
 }
 
@@ -116,9 +141,6 @@ body {
 .main {
     width: calc(100% - 250px);
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 250px;
     overflow-y: auto;
 }
 
@@ -143,7 +165,6 @@ body {
 
 /* Middle Container */
 .middle-container {
-    width: 100%;
     background-color: lightpink;
     /* debug */
     height: calc(100% - 100px);
@@ -152,7 +173,6 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 250px;
-    height: calc(100% - 100px);
     background-color: black;
 }
 
@@ -168,6 +188,11 @@ body {
     flex-basis: 15%;
 }
 
+.logo-b {
+    height: 100%;
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 70px;
@@ -176,17 +201,72 @@ body {
     .main {
         width: calc(100% - 70px);
         height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 250px;
+    }
+
+    .top-container {
+        width: calc(100% - 70px);
+    }
+
+    .button-names {
+        display: none;
+    }
+
+    .logo-b {
+        display: block;
     }
 }
+
 /* PLAYER */
 .player {
-    width: 100%;
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    background-color: aqua;
+    background-color: var(--bg-player);
+}
 
+/* left */
+.player-left,
+.player-center,
+.player-right {
+    width: calc(100% / 3);
+}
+
+.track-logo {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    min-height: 60px;
+}
+
+.track-details {
+    padding: 15px 0;
+}
+
+/* center */
+.player-buttons {
+    width: 100%;
+}
+
+.time-left, .time-right {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.track-bar {
+    display: inline-block;
+    width: 80%;
+    height: 5px;
+    background-color: white;
+}
+
+/* right */
+.volume-bar {
+    display: inline-block;
+    width: 30%;
+    height: 5px;
+    background-color: white;
+}
+
+/* debug */
+.player-inner {
+    width: 100%;
+    height: 100%;
 }
