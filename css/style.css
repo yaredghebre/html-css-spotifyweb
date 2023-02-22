@@ -3,6 +3,7 @@
     /* Colors */
     --bg-primary: #141922;
     --bg-secondary: #282828;
+    --bg-top: #080b12;
     --bg-hover: #adff2f;
     --bg-footer: #282828;
 }
@@ -58,6 +59,10 @@ body {
     justify-content: center;
 }
 
+.jc-end {
+    justify-content: flex-end;
+}
+
 .between {
     justify-content: space-between;
 }
@@ -90,11 +95,25 @@ body {
 /* Top Container */
 .top-container {
     height: 100px;
-    width: 100%;
+    width: calc(100% - 200px);
     position: fixed;
     z-index: 100;
-    background-color: red;
+    background-color: var(--bg-top);
 }
+
+.top-button {
+    border: 1px solid white;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 10px 40px;
+    border-radius: 40px;
+
+}
+
+
+
+
 
 /* Middle Container */
 .middle-container {
