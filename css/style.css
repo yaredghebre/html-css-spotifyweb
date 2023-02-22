@@ -1,0 +1,119 @@
+/* VARIABLES */
+:root {
+    /* Colors */
+    --bg-primary: #141922;
+    --bg-secondary: #282828;
+    --bg-hover: #adff2f;
+    --bg-footer: #282828;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COMMON */
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: #656565;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+/* MAIN */
+/* Top Container */
+.top-container {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    /* z-index: 100; */
+    top: 0;
+    left: 0;
+    /* debug */
+    background-color: lightseagreen;
+}
+
+/* Main Container */
+.main-container {
+    background-color: var(--bg-primary);
+    overflow-y: auto;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* debug */
+    background-color: cornflowerblue;
+}
+
+/* PLAYER */
+.player {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* background-color: var(--bg-secondary); */
+}
