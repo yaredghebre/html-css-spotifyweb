@@ -20,7 +20,7 @@
         <!-- MAIN -->
         <div class="main flex">
             <!-- SIDEBAR -->
-            <section class="sidebar p-20 white line-h-20">
+            <section class="sidebar p-20 line-h-20">
                 <div class="logo-container mb-20 button-names">
                     <img src="img/logo.svg" alt="">
                 </div>
@@ -29,27 +29,30 @@
                 </div>
                 <nav class="nav-container flex column between">
                     <div class="buttons">
-                        <ul class="button-names">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Home</a></li>
+                        <ul class="button-list">
+                            <li><a href=""><i class="fa-sharp fa-solid fa-house white fa-lg "></i></a><a class="button-names white side-name" href="">Home</a></li>
+                            <li><a href=""><i class="fa-solid fa-magnifying-glass white fa-lg mr-5"></i></a><a class="button-names grey side-name" href="">Cerca</a></li>
+                            <li><a href=""><i class="fa-solid fa-book white fa-lg mr-5"></i></a><a class="button-names grey side-name" href="">La tua libreria</a></li>
                         </ul>
         
-                        <h4 class="button-names">PLAYLIST</h4>
-                        <ul class="button-names">
-                            <li><a href="">Crea Plalist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
+                        <h4 class="button-names white">PLAYLIST</h4>
+                        <ul class="button-names button-list">
+                            <li><a href=""><i class="fa-solid fa-square-plus grey fa-3x"></i></a> <a class="grey side-name ml-20" href="">Crea Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
+                            <li><a class="grey" href="">Nome Playlist</a></li>
                         </ul>
                     </div>
                     <div class="user">
-                        <div class="button-names">Installa app</div>
-                        <div class="button-names">John Doe</div>
+                        <ul>
+                            <li><a href=""><i class="fa-regular fa-circle-down grey mr-5"></i></a> <a class="button-names grey" href="">Installa app</a></li>                       
+                            <li><a href=""><i class="fa-solid fa-circle-user white fa-lg mr-5"></i></a> <a class="button-names white" href="">John Doe</a></li>
+                        </ul>
+
                     </div>
                 </nav>
                     
@@ -187,17 +190,19 @@
             <!-- center -->
             <div class="player-center p-10 ta-center">
                 <div class="player-buttons flex jc-center mb-20">
-                    <ul class="flex gap-20">
-                        <li><a href=""></a>A</li>
-                        <li><a href=""></a>A</li>
-                        <li><a href=""></a>A</li>
-                        <li><a href=""></a>A</li>
-                        <li><a href=""></a>A</li>
+                    <ul class="flex gap-30 ai-center">
+                        <li><a href=""></a><i class="fa-solid fa-shuffle"></i></li>
+                        <li><a href=""></a><i class="fa-solid fa-backward-step"></i></li>
+                        <li><a href=""></a><i class="fa-regular fa-circle-play fa-2x"></i></li>
+                        <li><a href=""></a><i class="fa-solid fa-forward-step"></i></li>
+                        <li><a href=""></a><i class="fa-solid fa-rotate-right"></i></li>
                     </ul>
                 </div>
-                <a class="time-left">0:25</a>
-                <a class="track-bar"></a>
-                <a class="time-right">4:35</a>
+                <a class="time-left mr-20">0:25</a>
+                <div class="track-bar relative">
+                    <a class="track-status" href=""></a>
+                </div>
+                <a class="time-right ml-20">4:35</a>
             </div>
 
             <!-- right -->
@@ -208,7 +213,9 @@
                         <li><a href=""><i class="fa-solid fa-desktop"></i></a></li>
                         <li><a href=""><i class="fa-solid fa-volume-xmark"></i></a></li>
                     </ul>
-                <div class="volume-bar"></div>
+                    <div class="volume-bar relative">
+                        <a class="volume-status" href=""></a>
+                    </div>
                 </div>
             </div>
         </section>
