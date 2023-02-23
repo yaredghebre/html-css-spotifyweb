@@ -106,12 +106,24 @@ body {
     margin: 20px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 .mr-20 {
@@ -132,15 +144,21 @@ body {
 
 /* WRAPPER */
 .wrapper {
+    height: 100vh;
+}
+
+/* MAIN */
+.main {
     width: 100%;
     height: calc(100vh - 100px);
     /* background-color: var(--bg-primary); */
 }
 
-/* MAIN */
-.main {
+/* CONTENT */
+.content {
     width: calc(100% - 250px);
-    height: 100vh;
+    /* height: 100%; */
+    background-color: var(--bg-primary);
     overflow-y: auto;
 }
 
@@ -149,6 +167,8 @@ body {
     height: 100px;
     width: calc(100% - 250px);
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 100;
     background-color: var(--bg-top);
     opacity: .8;
@@ -165,10 +185,30 @@ body {
 
 /* Middle Container */
 .middle-container {
-    background-color: lightpink;
     /* debug */
-    height: calc(100% - 100px);
+    /* height: calc(100% - 100px); */
+    background-color: var(--bg-primary);
 }
+
+.mc-menu {
+    padding: 120px 20px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.mc-col {
+    width: calc(100% / 6 - 20px);
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+
+
+
+
+
 
 /* SIDEBAR */
 .sidebar {
@@ -218,6 +258,10 @@ body {
 
 /* PLAYER */
 .player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 100px;
     background-color: var(--bg-player);
 }
