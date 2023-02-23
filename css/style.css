@@ -312,9 +312,12 @@ body {
 
 /* left */
 .player-left,
-.player-center,
 .player-right {
-    width: calc(100% / 3);
+    width: 25%;
+}
+
+.player-center {
+    width: 50%;
 }
 
 .track-logo {
@@ -340,7 +343,7 @@ body {
 
 .track-bar {
     display: inline-block;
-    width: 80%;
+    width: 60%;
     height: 5px;
     background-color: grey;
 }
@@ -371,4 +374,8 @@ body {
     height: 5px;
     background-color: white;
     opacity: .6;
+}
+
+@media screen and (max-width: 1100px) {
+    
 }
