@@ -233,6 +233,30 @@ body {
     border-radius: 50%;
 }
 
+.hover-card {
+    /* display: block; */
+    display: none;
+}
+
+.card-icon {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.mc-card:hover .hide-card {
+    display: none;
+    /* opacity: .5; */
+}
+
+.mc-card:hover .hover-card, .card-icon {
+    display: block;
+    opacity: .5;
+}
+
+
+
+
 @media screen and (max-width: 1100px) {
 
    .mc-col {
