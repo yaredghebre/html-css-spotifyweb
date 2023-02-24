@@ -194,6 +194,10 @@ body {
     border-radius: 40px;
 }
 
+.top-button:hover {
+    scale: 1.2;
+}
+
 /* Middle Container */
 .middle-container {
     width: 100%;
