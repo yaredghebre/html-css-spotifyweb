@@ -216,8 +216,12 @@ body {
     margin: 0 auto;
 }
 
-.menu-items {
-    /* width: calc(100% / 6); */
+.menu-list li:first-child {
+    border-bottom: 2px solid var(--bg-hover);
+}
+
+.menu-items:hover {
+    color: white;
 }
 
 /* cards */
